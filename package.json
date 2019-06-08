@@ -1,0 +1,31 @@
+{
+  "name": "miniature-bassoon",
+  "version": "0.0.1",
+  "description": "Graphql Express Simple Server ",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buddhikasemasinghe/miniature-bassoon.git"
+  },
+  "keywords": [
+    "graphql",
+    "express",
+    "node"
+  ],
+  "author": "Buddhika Semasinghe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buddhikasemasinghe/miniature-bassoon/issues"
+  },
+  "homepage": "https://github.com/buddhikasemasinghe/miniature-bassoon#readme"
+}
