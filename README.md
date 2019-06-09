@@ -12,7 +12,7 @@ Open http://localhost:8519/graphql
 * Passing arguments
 * Basic types
 * Object Types
-
+* Mutation
 
 
 
