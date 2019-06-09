@@ -4,13 +4,21 @@ var { buildSchema } = require('graphql');
 
 var schema = buildSchema(`
     type Query {
-        hello: String
+        quoteOfTheDay: String
+        random: Float!
+        rollDice(numDice: Int!, numSides: Int): [Int]
     }
 `);
 
 var root = {
-    hello: () => {
-        return 'Hello Sanuthi!';
+    quoteOfTheDay: () => Math.random() < 0.5 ? 'Take it easy' : 'Salvation lies within',
+    random: () => Math.random(),
+    rollDice: ({numDice, numSides}) => {
+        var outPut = [];
+        [...Array(numDice).keys()].forEach(i => {
+            outPut.push(1 + Math.floor(Math.random() * (numSides || 6)));
+        });
+        return outPut;
     }
 }
 
